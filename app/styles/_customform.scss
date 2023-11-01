@@ -1,0 +1,40 @@
+.formSection {
+  margin: 3em 0;
+  & > h1 {
+    text-align: center;
+    margin: 2em 0;
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: rgb(126, 55, 148);
+  }
+  & > form {
+    margin: 0 auto;
+    width: 30rem;
+    display: grid;
+    gap: 0.5rem;
+  }
+  .formSection__group {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+  }
+  .arzt-select {
+    width: 30rem;
+  }
+}
+
+.rezept-success {
+  text-align: center;
+  color: rgb(5, 189, 5);
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 5em 0;
+}
+
+.rezeptForm {
+  display: flex;
+  justify-content: space-around;
+  gap: 2em;
+  flex-wrap: wrap;
+}

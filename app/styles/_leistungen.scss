@@ -1,0 +1,24 @@
+.leistungen {
+  margin-right: 2em;
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+  .img-wrap{
+      background-color: rgb(66, 66, 222);
+      aspect-ratio: 1;
+      width: 100%;
+      display: flex; 
+      justify-content: center;
+      align-items: center;    
+      & > h1 {
+        color: white;
+        font-size: 2rem;
+        font-weight: 600;
+      }
+  }
+  .leistung-accordion {
+    width: 90%;
+    margin: 0 auto;
+  }
+}

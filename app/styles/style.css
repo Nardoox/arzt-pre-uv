@@ -1,0 +1,552 @@
+@charset "UTF-8";
+.sel-header {
+  z-index: 10;
+  position: fixed;
+  background-color: rgb(255, 255, 255);
+  width: 80%;
+  height: 10vh;
+  right: 10%;
+  top: 0;
+  padding: 1em 1em;
+  display: flex;
+  justify-content: space-between;
+}
+.sel-header > ul {
+  width: 70%;
+  display: flex;
+  justify-content: space-around;
+}
+.sel-header > ul > a {
+  font-size: 1.3rem;
+  font-weight: 700;
+  text-decoration: none;
+  color: rgb(126, 55, 148);
+  text-transform: uppercase;
+  margin: auto;
+}
+.sel-header > img {
+  margin: auto 0;
+  width: 130px;
+  height: 60px;
+}
+
+.header-placeholder {
+  margin-bottom: 15vh;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  line-height: 1.1;
+  letter-spacing: 1px;
+}
+
+p {
+  font-size: 1.25rem;
+}
+
+main {
+  background-color: rgb(58, 78, 143);
+}
+
+.con-wrap {
+  width: 80%;
+  background-color: #fff;
+  margin: 0 auto;
+}
+
+.desc-section {
+  box-sizing: content-box;
+  overflow: hidden;
+  padding: 1em 0;
+  width: 90%;
+  margin: 0 auto;
+  margin-bottom: 3em;
+}
+.desc-section > h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: rgb(126, 55, 148);
+  text-align: center;
+  margin-bottom: 2em;
+}
+.desc-section > nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  max-width: 700px;
+  margin: 0 auto;
+}
+.desc-section > nav > a {
+  font-weight: 500;
+  background-color: rgb(126, 55, 148);
+  border-radius: 10px;
+  padding: 0.5em 0.25em;
+  text-align: center;
+  width: 30%;
+  margin: 0 1em;
+  text-decoration: none;
+  color: white;
+  font-size: 1.2rem;
+}
+.desc-section .geburtshilfe-sec {
+  box-sizing: content-box;
+}
+.desc-section .geburtshilfe-sec > h3 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin: 1em 0;
+  color: rgb(126, 55, 148);
+}
+.desc-section .geburtshilfe-sec .geb-desc-con {
+  display: flex;
+  justify-content: space-between;
+}
+.desc-section .geburtshilfe-sec .geb-desc-con .img-wrap {
+  width: 45%;
+}
+.desc-section .geburtshilfe-sec .geb-desc-con .img-wrap > img {
+  aspect-ratio: 2;
+  width: 100%;
+  height: auto;
+}
+.desc-section .geburtshilfe-sec .geb-desc-con .geb-desc-txt {
+  width: 50%;
+}
+.desc-section .gynäkologie-sec {
+  box-sizing: content-box;
+}
+.desc-section .gynäkologie-sec > h3 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin: 1em 0;
+  color: rgb(126, 55, 148);
+}
+.desc-section .gynäkologie-sec .gyn-desc-con {
+  display: flex;
+  justify-content: space-between;
+}
+.desc-section .gynäkologie-sec .gyn-desc-con .img-wrap {
+  order: 2;
+  width: 45%;
+}
+.desc-section .gynäkologie-sec .gyn-desc-con .img-wrap > img {
+  aspect-ratio: 2;
+  width: 100%;
+  height: auto;
+}
+.desc-section .gynäkologie-sec .gyn-desc-con .gyn-desc-txt {
+  width: 50%;
+}
+.desc-section .operative-sec {
+  box-sizing: content-box;
+}
+.desc-section .operative-sec > h3 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin: 1em 0;
+  color: rgb(126, 55, 148);
+}
+.desc-section .operative-sec .op-desc-con {
+  display: flex;
+  justify-content: space-between;
+}
+.desc-section .operative-sec .op-desc-con .img-wrap {
+  width: 45%;
+}
+.desc-section .operative-sec .op-desc-con .img-wrap > img {
+  aspect-ratio: 2;
+  width: 100%;
+  height: auto;
+}
+.desc-section .operative-sec .op-desc-con .op-desc-txt {
+  width: 50%;
+}
+
+.formSection {
+  margin: 3em 0;
+}
+.formSection > h1 {
+  text-align: center;
+  margin: 2em 0;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: rgb(126, 55, 148);
+}
+.formSection > form {
+  margin: 0 auto;
+  width: 30rem;
+  display: grid;
+  gap: 0.5rem;
+}
+.formSection .formSection__group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+.formSection .arzt-select {
+  width: 30rem;
+}
+
+.rezept-success {
+  text-align: center;
+  color: rgb(5, 189, 5);
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 5em 0;
+}
+
+.rezeptForm {
+  display: flex;
+  justify-content: space-around;
+  gap: 2em;
+  flex-wrap: wrap;
+}
+
+.arztFooter {
+  display: flex;
+  background-color: rgb(58, 78, 143);
+  width: 100%;
+  justify-content: space-evenly;
+  align-content: center;
+  color: white;
+  padding: 3rem;
+}
+.arztFooter a {
+  font-weight: 600;
+  text-decoration: underline;
+  color: bisque;
+  padding-left: 0.1rem;
+}
+.arztFooter > ul {
+  width: 16%;
+}
+.arztFooter > ul > li {
+  display: flex;
+  align-items: center;
+}
+
+.test {
+  border: 1px solid red;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cardSection {
+  border: 1px solid red;
+  width: 100vw;
+  height: 30rem;
+}
+
+.about-us {
+  width: 90%;
+  margin: 0 auto;
+  margin-bottom: 3em;
+}
+.about-us > nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  max-width: 700px;
+  margin: 0 auto;
+}
+.about-us > nav > a {
+  font-weight: 500;
+  background-color: rgb(126, 55, 148);
+  border-radius: 10px;
+  padding: 0.5em 0.25em;
+  text-align: center;
+  width: 30%;
+  margin: 0 1em;
+  text-decoration: none;
+  color: white;
+  font-size: 1.2rem;
+}
+.about-us > h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: rgb(126, 55, 148);
+  text-align: center;
+  margin-bottom: 2em;
+}
+.about-us .about-doc {
+  margin: 3em 0;
+  width: 100%;
+}
+.about-us .about-doc > h3 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin: 1em 0;
+  color: rgb(126, 55, 148);
+}
+.about-us .about-doc .doc-con-sec {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2em;
+  width: 100%;
+  margin: 0 auto;
+}
+.about-us .about-doc .doc-con-sec .doc-con {
+  z-index: 0;
+  width: 30%;
+  min-width: 300px;
+}
+.about-us .about-doc .doc-con-sec .doc-con > p {
+  padding: 0 1em;
+}
+.about-us .about-doc .doc-con-sec .doc-con > img {
+  width: 100%;
+  height: auto;
+  border-radius: 1000px;
+  margin-bottom: 2em;
+}
+.about-us .about-team {
+  margin: 6em 0;
+}
+.about-us .about-team > h3 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin: 1em 0;
+  color: rgb(126, 55, 148);
+}
+.about-us .about-team .about-team__content {
+  display: flex;
+  justify-content: space-evenly;
+  row-gap: 3em;
+}
+.about-us .about-team .about-team__content img {
+  min-width: 200px;
+  cursor: pointer;
+}
+.about-us .about-team .about-team__content > div:first-child {
+  border: 1px solid black;
+  height: 27rem;
+  width: 50rem;
+}
+.about-us .about-team .about-team__content > div:first-child > img {
+  width: 100%;
+  height: 100%;
+}
+.about-us .about-team .team-con-sec {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 1rem;
+  margin-left: 1em;
+}
+.about-us .about-team .team-con-sec .team-con {
+  width: 13rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+}
+.about-us .about-team .team-con-sec .team-con > img {
+  width: 100%;
+  height: 100%;
+}
+.about-us .about-team .team-con-sec .team-con:nth-child(2) {
+  transform: translateY(-1em);
+}
+.about-us .about-team .team-con-sec .team-con:nth-child(3) {
+  transform: translateY(-2em);
+}
+.about-us > img {
+  margin-top: 5em;
+  aspect-ratio: 3;
+  width: 80%;
+  margin-left: 10%;
+  height: auto;
+}
+
+.modalcontent {
+  padding: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.praxis-sec > h3 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin: 1em 0;
+  color: rgb(126, 55, 148);
+}
+.praxis-sec .praxis-gallery {
+  width: 100%;
+  margin: 0 auto;
+  display: grid;
+  gap: 1em;
+  grid-auto-columns: 1fr;
+  grid-template-areas: "one one two three five five" "four four four three six six";
+}
+.praxis-sec .praxis-gallery > div {
+  height: 15rem;
+}
+.praxis-sec .praxis-gallery > div > img {
+  width: 100%;
+  height: 100%;
+}
+.praxis-sec .praxis-gallery > div:nth-child(1) {
+  grid-area: one;
+}
+.praxis-sec .praxis-gallery > div:nth-child(2) {
+  grid-area: two;
+}
+.praxis-sec .praxis-gallery > div:nth-child(3) {
+  height: 100% !important;
+  grid-area: three;
+}
+.praxis-sec .praxis-gallery > div:nth-child(4) {
+  grid-area: four;
+}
+.praxis-sec .praxis-gallery > div:nth-child(5) {
+  grid-area: five;
+}
+.praxis-sec .praxis-gallery > div:nth-child(6) {
+  grid-area: six;
+}
+
+.hero-section {
+  position: relative;
+  width: 100%;
+}
+.hero-section > img {
+  width: 100%;
+}
+.hero-section > h2 {
+  top: 80%;
+  left: 0;
+  right: 0;
+  position: absolute;
+  font-size: 2rem;
+  font-weight: 700;
+  color: rgb(126, 55, 148);
+  text-align: center;
+  margin-bottom: 1em;
+}
+.hero-section > nav {
+  position: absolute;
+  top: 90%;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+.hero-section > nav > a {
+  font-weight: 500;
+  background-color: rgb(126, 55, 148);
+  border-radius: 10px;
+  padding: 0.5em 0.25em;
+  text-align: center;
+  width: 30%;
+  margin: 0 1em;
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+}
+
+.leistungen {
+  margin-right: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+}
+.leistungen .img-wrap {
+  background-color: rgb(66, 66, 222);
+  aspect-ratio: 1;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.leistungen .img-wrap > h1 {
+  color: white;
+  font-size: 2rem;
+  font-weight: 600;
+}
+.leistungen .leistung-accordion {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.wave-1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  z-index: 10;
+  transform: rotate(180deg);
+}
+
+.wave-1 svg {
+  z-index: 10;
+  position: relative;
+  display: block;
+  width: calc(300% + 1.3px);
+  height: 76px;
+}
+
+.wave-1 .shape-fill {
+  z-index: 10;
+  fill: #0A0735;
+}
+
+.left-side {
+  background-image: url("/left.svg");
+  width: 65%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  z-index: 0;
+}
+.left-side > path {
+  position: absolute;
+}
+
+.right-side {
+  background-image: url("/right.svg");
+  width: 65%;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  z-index: 0;
+}
+.right-side > path {
+  position: absolute;
+}
+
+.anfahrt {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  gap: 1em;
+  margin-bottom: 2em;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;/*# sourceMappingURL=style.css.map */
