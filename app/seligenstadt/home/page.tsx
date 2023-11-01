@@ -1,4 +1,5 @@
 "use client";
+import React from "react";
 import SelHeader from "@/components/SelHeader";
 import placeholder from "@/images/placeholder.png";
 import background from "@/images/arzt.png";
@@ -21,7 +22,7 @@ import Accordiont from "@/components/accordion";
 import Left from "@/components/left";
 import Right from "@/components/right";
 
-export default function page() {
+export default function Page() {
   const { isOpen, onOpen, onOpenChange } = useDisclosure();
   return (
     <>
