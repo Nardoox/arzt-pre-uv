@@ -547,6 +547,10 @@ main {
   margin-bottom: 2em;
 }
 
+.radio {
+  justify-content: space-between;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;/*# sourceMappingURL=style.css.map */

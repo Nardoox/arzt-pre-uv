@@ -18,6 +18,7 @@ import {
 } from "@nextui-org/modal";
 import { Button } from "@nextui-org/button";
 import RezeptForm from "@/components/rezeptForm";
+import TerminForm from "@/components/terminForm";
 import Accordiont from "@/components/accordion";
 import Left from "@/components/left";
 import Right from "@/components/right";
@@ -30,7 +31,7 @@ export default function Page() {
       <section className="con-wrap">
         <div className="hero-section">
           <Image src={background} alt="alt"></Image>
-          <h2>Dienstleistungen</h2>
+          <h2>Leistungen</h2>
           <nav>
             <Link href={"/"}>Geburtshilfe</Link>
             <Link href={"/"}>Gynäkologie</Link>
@@ -40,7 +41,7 @@ export default function Page() {
         <Accordiont />
         <section className="rezeptForm">
           <RezeptForm></RezeptForm>
-          <RezeptForm></RezeptForm>
+          <TerminForm></TerminForm>
         </section>
         <section id="about" className="about-us">
           <h2>Über uns</h2>

@@ -2,22 +2,31 @@
 import { Input } from "@nextui-org/input";
 import { Textarea } from "@nextui-org/input";
 import { Button, ButtonGroup } from "@nextui-org/button";
-import {Select, SelectSection, SelectItem} from "@nextui-org/select";
+import { Select, SelectSection, SelectItem } from "@nextui-org/select";
 import { useForm, ValidationError } from '@formspree/react';
+import { RadioGroup, Radio } from "@nextui-org/react";
 import React from "react";
 
-const RezeptForm = () => {
+const TerminForm = () => {
 
   const [state, handleSubmit] = useForm("maygvnwy");
   if (state.succeeded) {
-    return <p className="rezept-success">Ihr Rezeptanfrage wurde erfolgreich abgeschickt</p>;
+    return <p className="rezept-success">Ihr Terminanfrage wurde erfolgreich abgeschickt</p>;
   }
 
   return (
     <>
     <section className="formSection">
-      <h1>Rezeptanfrage</h1>
+      <h1>Terminanfrage</h1>
       <form onSubmit={handleSubmit}>  
+        <RadioGroup
+        orientation="horizontal"
+        className="radio"
+        name="patient"
+      >
+        <Radio value="buenos-aires">Bereits Patient-/in</Radio>
+        <Radio value="sydney">Neupatient-/in</Radio>
+      </RadioGroup>
         <div className="formSection__group">
           <Input name="Nachname" type="text" label="Name" size="sm" />
           <Input name="Vorname" type="text" label="Vorname" size="sm" />
@@ -30,6 +39,7 @@ const RezeptForm = () => {
         <Input name="Email" type="email" label="Email" size="sm" />
         <Input name="Telefonnummer" type="tel" label="Telefon" size="sm" />
         <Input name="Geburtsdatum" type="date" label="Geburtsdatum" size="lg" placeholder="." />
+        <Input name="Krankenkasse" type="krankenkasse" label="Krankenkasse" size="sm"/>
         <Select
         name="behandelnder Artt"
         label="behandelnder Arzt"
@@ -49,7 +59,7 @@ const RezeptForm = () => {
         <Textarea
           name="Nachricht"
           labelPlacement="outside"
-          placeholder="Gib hier deine Nachricht ein"
+          placeholder="Terminwunsch und Anliegen"
         />
         <Button type="submit" color="primary" variant="ghost">
           Abschicken
@@ -60,5 +70,5 @@ const RezeptForm = () => {
   );
 };
 
-export default RezeptForm;
+export default TerminForm;
 
